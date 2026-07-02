@@ -1,4 +1,19 @@
+using Microsoft.EntityFrameworkCore;
+using ClinicFlow.Infrastructure.Persistence;
+using ClinicFlow.Application.Interfaces;
+using ClinicFlow.Application.Services;
+using ClinicFlow.Infrastructure.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ClinicDbContext>(options =>
+{
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("ClinicDb"));
+});
+
+builder.Services.AddScoped<IPatientRepository, PatientRepository>();
+builder.Services.AddScoped<IPatientService, PatientService>();
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

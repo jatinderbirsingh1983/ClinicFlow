@@ -1,7 +1,7 @@
 <Solution>
-  <Project Path="ClinicFlow.API/ClinicFlow.API.csproj" />
-  <Project Path="ClinicFlow.Application/ClinicFlow.Application.csproj" />
-  <Project Path="ClinicFlow.Domain/ClinicFlow.Domain.csproj" />
-  <Project Path="ClinicFlow.Infrastructure/ClinicFlow.Infrastructure.csproj" />
-  <Project Path="ClinicFlow.Tests/ClinicFlow.Tests.csproj" />
+  <Project Path="src/ClinicFlow.API/ClinicFlow.API.csproj" />
+  <Project Path="src/ClinicFlow.Application/ClinicFlow.Application.csproj" />
+  <Project Path="src/ClinicFlow.Domain/ClinicFlow.Domain.csproj" />
+  <Project Path="src/ClinicFlow.Infrastructure/ClinicFlow.Infrastructure.csproj" />
+  <Project Path="tests/ClinicFlow.Tests/ClinicFlow.Tests.csproj" />
 </Solution>
