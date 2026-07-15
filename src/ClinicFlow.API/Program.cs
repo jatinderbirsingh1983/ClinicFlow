@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ClinicFlow.Infrastructure.Persistence;
 using ClinicFlow.Application.Interfaces;
-using ClinicFlow.Application.Services;
+using ClinicFlow.Application.DTOs.Services;
 using ClinicFlow.Infrastructure.Repositories;
 using ClinicFlow.Application.Departments;
 using ClinicFlow.Infrastructure;
